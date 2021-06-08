@@ -82,12 +82,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(Ages){
-  const dogYears = Ages =>  console.log("The dog is " + (Ages * 7) + " years old in human years")
-dogYears(3);
-dogYears(7);
+function dogYears2(num){
+	return  console.log('The dog is ' + (num * 7) + ' years old in human years')
 }
-
+dogYears2(3);
+dogYears2(7);
 
 
 
@@ -163,7 +162,17 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
+  let computer = (Math.random());
+  if (computer >= .7){
+    return ("paper")
+  }
+  if (computer <= .3){
+    return ("scissors")
+  }
+  if (computer>=.301 && <=.69){
+    return ("rock")
+  }
+  
 }
   
   
