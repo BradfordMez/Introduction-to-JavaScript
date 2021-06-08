@@ -17,8 +17,9 @@ Do the following:
 
    HINT: no function required
 */
-
-
+let votingAge = '17';
+  console.log( votingAge >= 18 )
+// ??????
 
 /*
 Task 1b - Values
@@ -30,6 +31,12 @@ Do the following:
 
    HINT: no function required
 */
+var firstv = '6';
+let secondv = false;
+if (firstv == "6"){
+  secondv = true
+}
+console.log(secondv)
 
 
 
@@ -45,8 +52,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
+var number = parseInt("1999");
+console.log (number)
 
 
 /*
@@ -58,11 +65,12 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
-
-
+function multiply (a) {
+  return function (b) {
+    return a * b;
+  };
+};
+console.log(multiply(10)(12))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -74,9 +82,13 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(Ages){
+  const dogYears = Ages =>  console.log("The dog is " + (Ages * 7) + " years old in human years")
+dogYears(3);
+dogYears(7);
 }
+
+
 
 
 
@@ -123,10 +135,10 @@ function hungryDog(weight, age){
     }else if (age <0.333){
       return weight *.10;
     }else{
-      return 'Please Try Again'
+      return 'Please Try Again';
     }
   }
-console.log('task 3', hungryDog)
+console.log ('task 3', hungryDog(15, 1));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
