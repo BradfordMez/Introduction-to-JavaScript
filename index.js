@@ -164,16 +164,37 @@ Use the game function below to do the following:
 function game(user, computer){
   let computer = (Math.random());
   if (computer >= .7){
-    return ("paper")
+    return ("paper");
   }
   if (computer <= .3){
-    return ("scissors")
+    return ("scissors");
   }
-  if (computer>=.301 && <=.69){
-    return ("rock")
+  if (computer >=.301 && computer <=.69){
+    return ("rock");
   }
-  
+  if (computer === 'rock' && user === 'scissors'){
+    return "Computer Wins!";
+  }else if (computer ==='rock' && user === 'paper'){
+    return "User Wins!";
+  }else if (computer === 'rock' && user === 'rock'){
+    return "Tie!";
+  }
+  if (computer === 'paper' && user === 'paper'){
+    return "Tie!";
+  } else if (computer === 'paper' && user === 'rock'){
+    return "Computer Wins!";
+  }else if (computer === 'paper' && user ='scissors'){
+    return "User Wins!";
+  }
+  if (computer === 'scissors' && user === 'scissors'){
+    return "Tie!"
+  }else if (computer === 'scissors' && user === 'paper'){
+    return "Computer Wins!"
+  }else if (computer === 'scissors' && user === 'rock'){
+    return "User Wins!"
+  }
 }
+console.log(computer)
   
   
 
