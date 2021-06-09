@@ -160,41 +160,62 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+// function game(user:any, computer:any){
+//   game("rock", "paper", "scissors")
+//   let computer = (Math.random());
+//   if (computer >= .7){computer = "paper";}
+//   else if (computer <= .3){
+//     computer = "scissors";
+//   }
+//   else if (computer >=.301 && computer <=.69){
+//     computer = "rock";
+//   }
+//   if (computer == 'rock' && user == 'rock'){return "Tie"}
+//   if (computer == 'paper'&& user == 'rock'){return "You Lose!"}
+//   if (computer == 'scissors' && user == 'rock'){return "You Win!"}
+//   if (computer == 'rock' && user == 'paper'){return "You Win!"}
+//   if (computer == 'paper'&& user == 'paper'){return "Tie"}
+//   if (computer == 'scissors' && user == 'paper'){return "You Lose!"}
+//   if (computer == 'rock' && user == 'scissors'){return "You Lose!"}
+//   if (computer == 'paper'&& user == 'scissors'){return "You Win!"}
+//   if (computer == 'scissors' && user == 'scissors'){return "Tie"}
+//   console.log (game("paper"))
+//   }
+
 
 function game(user, computer){
-  let computer = (Math.random());
-  if (computer >= .7){
-    return ("paper");
+  let computerchoice = (Math.random());
+  computer === computerchoice
+  if (computerchoice >= .7){computer = "paper";}
+  if (computerchoice <= .3){
+    computer = "scissors";
   }
-  if (computer <= .3){
-    return ("scissors");
+  if (computerchoice >=.301 && computer <=.69){
+    computer = "rock";
   }
-  if (computer >=.301 && computer <=.69){
-    return ("rock");
-  }
-  if (computer === 'rock' && user === 'scissors'){
+  if (computerchoice === 'rock' && user === 'scissors'){
     return "Computer Wins!";
-  }else if (computer ==='rock' && user === 'paper'){
+  }else if (computerchoice ==='rock' && user === 'paper'){
     return "User Wins!";
-  }else if (computer === 'rock' && user === 'rock'){
+  }else if (computerchoice === 'rock' && user === 'rock'){
     return "Tie!";
   }
-  if (computer === 'paper' && user === 'paper'){
+  if (computerchoice === 'paper' && user === 'paper'){
     return "Tie!";
-  } else if (computer === 'paper' && user === 'rock'){
+  } else if (computerchoice === 'paper' && user === 'rock'){
     return "Computer Wins!";
-  }else if (computer === 'paper' && user ='scissors'){
+  }else if (computerchoice === 'paper' && user ==='scissors'){
     return "User Wins!";
   }
-  if (computer === 'scissors' && user === 'scissors'){
+  if ( computerchoice === 'scissors' && user === 'scissors'){
     return "Tie!"
-  }else if (computer === 'scissors' && user === 'paper'){
+  }else if (computerchoice === 'scissors' && user === 'paper'){
     return "Computer Wins!"
-  }else if (computer === 'scissors' && user === 'rock'){
+  }else if (computerchoice === 'scissors' && user === 'rock'){
     return "User Wins!"
   }
 }
-console.log(computer)
+console.log (game("paper"))
   
   
 
@@ -205,15 +226,23 @@ console.log(computer)
 /*
 Using the miles function below do the following:
   1. Receive a number of kilometers
-  2. Convert the number of kiolmeters received to miles
+  2. Convert the number of kilometers received to miles
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
-  }
-
-
+function miles(kilometer){
+  kilometer = 1.60934
+  sum = kilometer * 0.621371
+  return sum;
+}
+  sum(2);
+  
+  // function multiply (a) {
+  //   return function (b) {
+  //     return a * b;
+  //   };
+  // };
+  // console.log(multiply(10)(12))
 
 //Task 5b - Feet to CM
 /*
